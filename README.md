@@ -1,5 +1,5 @@
-# GitBook Default Theme
+### What is this?
+This theme is extends from the gitbook official theme-default.
 
-This is the default theme for GitBook since version `3.0.0`. It can be used as a template for theming books or can be extended.
-
-![Image](https://raw.github.com/GitbookIO/theme-default/master/preview.png)
+### This a custome theme plugin
+we are not suggest you to use this theme, because we have changed the template, maybe this kind of change will make your book layout messy.

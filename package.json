@@ -1,8 +1,8 @@
 {
-  "name": "gitbook-plugin-theme-default",
+  "name": "gitbook-plugin-theme-default-customize",
   "description": "Default theme for GitBook",
   "main": "./index.js",
-  "version": "1.0.7",
+  "version": "1.0.1",
   "engines": {
     "gitbook": ">=3.0.0"
   },
@@ -20,12 +20,9 @@
     "mousetrap": "1.6.0",
     "uglify-js": "2.7.3"
   },
-  "scripts": {
-    "prepublish": "./src/build.sh"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GitbookIO/theme-default.git"
+    "url": "https://github.com/cocos-creator/theme-default.git"
   },
   "author": "FriendCode Inc. <contact@gitbook.com>",
   "license": "Apache-2.0",

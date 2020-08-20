@@ -8,6 +8,10 @@
     margin: 0px auto;
     padding: 20px 270px 40px 40px;
 
+    @media (max-width: @mobileMaxWidth) {
+        padding: 20px 40px 40px 40px;
+    }
+
     .btn-group {
         .btn {
             border-radius: 0px;
@@ -30,6 +34,10 @@
     bottom: 40px;
     overflow-x: hidden;
     overflow-y: scroll;
+
+    @media (max-width: @mobileMaxWidth) {
+        display: none;
+    }
 }
 .book-anchor-title {
     line-height: 38px;

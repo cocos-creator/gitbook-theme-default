@@ -39,6 +39,11 @@
         {% endblock %}
     </div>
 
+    <div class="book-anchor">
+        <div class="book-anchor-body">
+        </div>
+    </div>
+
     <div class="book-body">
         {% block book_body %}
             <div class="body-inner">
@@ -53,23 +58,25 @@
                                 {% endblock %}
                                 </section>
                             {% endblock %}
+
+                            {% block book_navigation %}
+                            <div style="margin: 20px 0px 40px 0px; display: inline-block; float: right;">
+                                {% if page.previous and page.previous.path %}
+                                <a href="{{ page.previous.path|resolveFile }}{{ page.previous.anchor }}" class="navigation navigation-prev {% if not (page.next and page.next.path) %}navigation-unique{% endif %}" aria-label="Previous page: {{ page.previous.title }}">
+                                    Prev: {{ page.previous.title }}
+                                </a>
+                                {% endif %}
+                                {% if page.next and page.next.path %}
+                                <a href="{{ page.next.path|resolveFile }}{{ page.next.anchor }}" class="navigation navigation-next {% if not (page.previous and page.previous.path) %}navigation-unique{% endif %}" aria-label="Next page: {{ page.next.title }}">
+                                    Next: {{ page.next.title }}
+                                </a>
+                                {% endif %}
+                            </div>
+                            {% endblock %}
                         </div>
                     </div>
                 {% endblock %}
             </div>
-
-            {% block book_navigation %}
-                {% if page.previous and page.previous.path %}
-                <a href="{{ page.previous.path|resolveFile }}{{ page.previous.anchor }}" class="navigation navigation-prev {% if not (page.next and page.next.path) %}navigation-unique{% endif %}" aria-label="Previous page: {{ page.previous.title }}">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                {% endif %}
-                {% if page.next and page.next.path %}
-                <a href="{{ page.next.path|resolveFile }}{{ page.next.anchor }}" class="navigation navigation-next {% if not (page.previous and page.previous.path) %}navigation-unique{% endif %}" aria-label="Next page: {{ page.next.title }}">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                {% endif %}
-            {% endblock %}
         {% endblock %}
     </div>
 

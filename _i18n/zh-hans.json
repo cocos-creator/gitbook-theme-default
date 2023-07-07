@@ -9,6 +9,8 @@
     "SUMMARY_TOGGLE": "目录",
     "SEARCH_TOGGLE": "搜索",
     "SEARCH_PLACEHOLDER": "输入并搜索",
+    "SEARCH_RESULTS_TITLE": "<span class='search-results-count'></span> 条与 \"<span class='search-query'></span>\" 相匹配的结果",
+    "SEARCH_NO_RESULTS_TITLE": "没有与 \"<span class='search-query'></span>\" 匹配的结果",
     "FONTSETTINGS_TOGGLE": "字体设置",
     "SHARE_TOGGLE": "分享",
     "SHARE_ON": "分享到 {{platform}}",

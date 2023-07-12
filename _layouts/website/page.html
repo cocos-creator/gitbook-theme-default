@@ -1,6 +1,6 @@
 {% extends "./layout.html" %}
 
-{% block title %}{{ super() }} {{ config.variables.version[0].name }} {{ 'MANUAL'|t|safe }} - {{ page.title }}{% endblock %}
+{% block title %}{{ super() }} {{ config.variables.version[0].name }} {{ config.variables.docType }} - {{ page.title }}{% endblock %}
 
 {% block description %}{{ page.description }}{% endblock %}
 
